@@ -6,4 +6,5 @@ class AppVectors {
   static const String sun = '${basePath}sun$format';
   static const String google = '${basePath}google$format';
   static const String apple = '${basePath}apple$format';
+  static const String banner = '${basePath}banner$format';
 }
