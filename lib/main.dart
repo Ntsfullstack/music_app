@@ -3,8 +3,11 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:hydrated_bloc/hydrated_bloc.dart';
 import 'package:path_provider/path_provider.dart';
+import 'package:spotify/presentation/pages/bottom_navigation_bar/bloc/bottom_navigation_bar_cubit.dart';
+import 'package:spotify/presentation/pages/bottom_navigation_bar/bottom_navigation_bar.dart';
 import 'package:spotify/presentation/pages/intro/bloc/theme_cubit.dart';
 import 'package:spotify/presentation/pages/splash/splash_screen.dart';
+
 
 import 'core/config/themes/app_themes.dart';
 
@@ -26,6 +29,7 @@ class MyApp extends StatelessWidget {
     return MultiBlocProvider(
       providers: [
         BlocProvider(create: (_) => ThemesCubit()),
+        BlocProvider(create: (_) => BottomNavCubit()),
       ],
       child: BlocBuilder<ThemesCubit, ThemeMode>(
         builder: (context, state) => MaterialApp(

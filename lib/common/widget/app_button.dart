@@ -16,7 +16,7 @@ class AppButton extends StatelessWidget {
       ),
       child: Text(
         tittle,
-        style: TextStyle(
+        style: const TextStyle(
           color: Colors.white
         ),
       ));

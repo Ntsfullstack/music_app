@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:spotify/presentation/pages/bottom_navigation_bar/bottom_navigation_bar.dart';
 
 import '../../../common/widget/app_button.dart';
 import '../../../core/config/assets/app_vectors.dart';
@@ -119,7 +120,7 @@ class _LoginPageState extends State<LoginPage> {
                 Navigator.push (
                   context,
                   MaterialPageRoute(
-                    builder: (context) =>  const HomePage(),
+                    builder: (context) =>   CustomBottomNavBar()
                   ),
                 );
 
