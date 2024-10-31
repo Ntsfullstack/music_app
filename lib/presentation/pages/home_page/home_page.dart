@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:spotify/presentation/pages/home_page/widget/tab_bar.dart';
 import '../../../core/config/assets/app_vectors.dart';
+import '../profile_page/profile_page.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -51,10 +52,14 @@ class _HomePageState extends State<HomePage> with SingleTickerProviderStateMixin
 
   AppBar _buildAppBar() {
     return AppBar(
+
       leading: IconButton(
-        icon: const Icon(Icons.search, color: Colors.black, size: 30),
+        icon:  SvgPicture.asset(AppVectors.profile),
         onPressed: () {
-          // Add your search functionality here
+          Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) => const ProfilePage()), // Replace ProfilePage with your target widget
+          );
         },
       ),
       actions: [

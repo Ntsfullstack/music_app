@@ -80,8 +80,17 @@ class $AssetsVectorsGen {
   /// File path: assets/vectors/banner.svg
   String get banner => 'assets/vectors/banner.svg';
 
+  /// File path: assets/vectors/discovery.svg
+  String get discovery => 'assets/vectors/discovery.svg';
+
   /// File path: assets/vectors/google.svg
   String get google => 'assets/vectors/google.svg';
+
+  /// File path: assets/vectors/heart.svg
+  String get heart => 'assets/vectors/heart.svg';
+
+  /// File path: assets/vectors/home.svg
+  String get home => 'assets/vectors/home.svg';
 
   /// File path: assets/vectors/logo.svg
   String get logo => 'assets/vectors/logo.svg';
@@ -89,11 +98,15 @@ class $AssetsVectorsGen {
   /// File path: assets/vectors/moon.svg
   String get moon => 'assets/vectors/moon.svg';
 
+  /// File path: assets/vectors/profile.svg
+  String get profile => 'assets/vectors/profile.svg';
+
   /// File path: assets/vectors/sun.svg
   String get sun => 'assets/vectors/sun.svg';
 
   /// List of all assets
-  List<String> get values => [apple, banner, google, logo, moon, sun];
+  List<String> get values =>
+      [apple, banner, discovery, google, heart, home, logo, moon, profile, sun];
 }
 
 class Assets {
