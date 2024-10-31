@@ -11,4 +11,5 @@ class AppVectors {
   static const String discovery = '${basePath}discovery$format';
   static const String heart = '${basePath}heart$format';
   static const String profile = '${basePath}profile$format';
+  static const String search = '${basePath}search$format';
 }

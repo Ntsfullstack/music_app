@@ -101,12 +101,26 @@ class $AssetsVectorsGen {
   /// File path: assets/vectors/profile.svg
   String get profile => 'assets/vectors/profile.svg';
 
+  /// File path: assets/vectors/search.svg
+  String get search => 'assets/vectors/search.svg';
+
   /// File path: assets/vectors/sun.svg
   String get sun => 'assets/vectors/sun.svg';
 
   /// List of all assets
-  List<String> get values =>
-      [apple, banner, discovery, google, heart, home, logo, moon, profile, sun];
+  List<String> get values => [
+        apple,
+        banner,
+        discovery,
+        google,
+        heart,
+        home,
+        logo,
+        moon,
+        profile,
+        search,
+        sun
+      ];
 }
 
 class Assets {

@@ -35,7 +35,8 @@ class _HomePageState extends State<HomePage> with SingleTickerProviderStateMixin
         padding: const EdgeInsets.symmetric(horizontal: 20),
         child: Column(
           children: [
-            _buildBanner(),
+             start_categories(),
+            // _buildBanner(),
             _buildTabBar(),
             Expanded(
               child: CustomTabBarView(tabController: tabController),
@@ -79,14 +80,14 @@ class _HomePageState extends State<HomePage> with SingleTickerProviderStateMixin
       elevation: 0,
     );
   }
-  Widget _buildBanner() {
-    return Container(
-      height: 200,
-      decoration: const BoxDecoration(
-        
-      ),
-    );
-  }
+  // Widget _buildBanner() {
+  //   return Container(
+  //     height: 200,
+  //     decoration: const BoxDecoration(
+  //
+  //     ),
+  //   );
+  // }
   Widget _buildTabBar() {
     return TabBar(
       tabAlignment: TabAlignment.center,
@@ -139,4 +140,23 @@ class _HomePageState extends State<HomePage> with SingleTickerProviderStateMixin
       },
     );
   }
+
+  Widget start_categories() {
+    return Container(
+      height: 200,
+      child: ListView.separated(
+        scrollDirection: Axis.horizontal,
+        itemCount: 4,
+        separatorBuilder: (context, index) => const SizedBox(width: 16), // Set equal spacing between items
+        itemBuilder: (context, index) {
+          return Container(
+            padding: const EdgeInsets.all(8),
+            child: Text('Category ${index + 1}'),
+          );
+        },
+      ),
+    );
+  }
+
+
 }
